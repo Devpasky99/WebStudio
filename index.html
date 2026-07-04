@@ -1,0 +1,1233 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Meta Tags -->
+    <title>WebStudio | Desarrollo Web Profesional</title>
+    <meta name="description"
+        content="Ofrecemos servicios profesionales de desarrollo web, diseño de páginas web, tiendas online y SEO. Soluciones innovadoras para impulsar tu negocio al siguiente nivel.">
+    <meta name="keywords"
+        content="desarrollo web, diseño web, páginas web, tiendas online, SEO, sitio web profesional">
+    <meta name="author" content="WebStudio">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.webstudio.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.webstudio.com/">
+    <meta property="og:title" content="WebStudio | Desarrollo Web Profesional">
+    <meta property="og:description"
+        content="Ofrecemos servicios profesionales de desarrollo web, diseño de páginas web, tiendas online y SEO.">
+    <meta property="og:image" content="https://www.webstudio.com/images/og-image.jpg">
+<!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>W</text></svg>">
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "WebStudio",
+        "url": "https://www.webstudio.com",
+        "logo": "https://www.webstudio.com/images/logo.png",
+        "description": "Desarrollo web profesional y diseño de páginas web",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "900 Av. Manuel Villarán",
+            "addressLocality": "Lima",
+            "addressRegion": "Lima",
+            "postalCode": "15001",
+            "addressCountry": "PE"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "availableLanguage": ["Spanish"]
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "WebStudio",
+        "url": "https://www.webstudio.com",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.webstudio.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "¿Cuánto tiempo toma desarrollar un proyecto?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El tiempo de desarrollo varía según la complejidad del proyecto. Un sitio web corporativo típico toma entre 2 y 4 semanas."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Ofrecen soporte después del lanzamiento?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sí, ofrecemos soporte técnico continuo y planes de mantenimiento para asegurar que tu sitio funcione perfectamente."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cuáles son sus métodos de pago?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Aceptamos transferencia bancaria, tarjeta de crédito/débito y PayPal. Ofrecemos planes de financiamiento para proyectos grandes."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Skip Navigation for Accessibility -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Header / Navigation -->
+    <header class="header" id="header" role="banner">
+        <nav class="nav container" role="navigation" aria-label="Navegación principal">
+            <a href="#inicio" class="nav__logo" aria-label="Ir al inicio">
+                <span class="logo-text">WebStudio</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu" role="menubar">
+                <ul class="nav__list" role="none">
+                    <li class="nav__item" role="none">
+                        <a href="#inicio" class="nav__link active" role="menuitem">Inicio</a>
+                    </li>
+                    <li class="nav__item" role="none">
+                        <a href="#sobre-nosotros" class="nav__link" role="menuitem">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav__item" role="none">
+                        <a href="#servicios" class="nav__link" role="menuitem">Servicios</a>
+                    </li>
+                    <li class="nav__item" role="none">
+                        <a href="#portafolio" class="nav__link" role="menuitem">Portafolio</a>
+                    </li>
+                    <li class="nav__item" role="none">
+                        <a href="#testimonios" class="nav__link" role="menuitem">Testimonios</a>
+                    </li>
+                    <li class="nav__item" role="none">
+                        <a href="#faq" class="nav__link" role="menuitem">FAQ</a>
+                    </li>
+                    <li class="nav__item" role="none">
+                        <a href="#contacto" class="nav__link" role="menuitem">Contacto</a>
+                    </li>
+                </ul>
+                <button class="nav__close" id="nav-close" aria-label="Cerrar menú" type="button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Activar modo oscuro"
+                aria-pressed="false">
+                <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2"></path>
+                        <path d="M12 20v2"></path>
+                        <path d="m4.93 4.93 1.41 1.41"></path>
+                        <path d="m17.66 17.66 1.41 1.41"></path>
+                        <path d="M2 12h2"></path>
+                        <path d="M20 12h2"></path>
+                        <path d="m6.34 17.66-1.41 1.41"></path>
+                        <path d="m19.07 4.93-1.41 1.41"></path>
+                    </svg>
+                </span>
+                <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg>
+                </span>
+            </button>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú" type="button" aria-expanded="false"
+                aria-controls="nav-menu">
+                <span class="hamburger"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+
+        <!-- Hero Section -->
+        <section class="hero" id="inicio" aria-labelledby="hero-title">
+            <div class="hero__particles" id="particles" aria-hidden="true"></div>
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <span class="hero__badge animate-fade-in">✨ Desarrollo Web Profesional</span>
+                    <h1 class="hero__title animate-fade-in" id="hero-title">
+                        Transformamos Ideas en
+                        <span class="gradient-text">Experiencias Digitales</span>
+                    </h1>
+                    <p class="hero__description animate-fade-in">
+                        Creamos sitios web modernos, rápidos y optimizados que impulsan tu negocio al siguiente nivel.
+                        Soluciones digitales a medida con tecnología de vanguardia.
+                    </p>
+                    <div class="hero__buttons animate-fade-in">
+                        <a href="#contacto" class="btn btn--primary">
+                            <span>Comenzar Proyecto</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                        <a href="#portafolio" class="btn btn--outline">
+                            <span>Ver Portafolio</span>
+                        </a>
+                    </div>
+                    <div class="hero__stats animate-fade-in">
+                        <div class="stat">
+                            <span class="stat__number" data-count="100">0</span>
+                            <span class="stat__label">Proyectos Completados</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number" data-count="99">0</span>
+                            <span class="stat__label">% Clientes Satisfechos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number" data-count="4">0</span>
+                            <span class="stat__label">Años de Experiencia</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__visual">
+                    <div class="hero__image-wrapper">
+                        <div class="hero__shape" aria-hidden="true"></div>
+                        <div class="hero__floating-card card-1" aria-hidden="true">
+                            <span class="card-icon">💻</span>
+                            <span class="card-text">Diseño Web</span>
+                        </div>
+                        <div class="hero__floating-card card-2" aria-hidden="true">
+                            <span class="card-icon">🛒</span>
+                            <span class="card-text"> Tiendas Online</span>
+                        </div>
+                        <div class="hero__floating-card card-3" aria-hidden="true">
+                            <span class="card-icon">🔍</span>
+                            <span class="card-text">SEO & Posicionamiento</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__scroll" aria-hidden="true">
+                <span>Scroll</span>
+                <div class="scroll-indicator"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about" id="sobre-nosotros" aria-labelledby="about-title">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Conócenos</span>
+                    <h2 class="section__title" id="about-title">Sobre <span class="gradient-text">Nosotros</span></h2>
+                    <p class="section__description">Somos un equipo apasionado por crear soluciones digitales que marcan
+                        la diferencia</p>
+                </div>
+
+                <div class="about__grid">
+                    <div class="about__content">
+                        <h3 class="about__subtitle">4 años de experiencia</h3>
+                        <p class="about__text">
+                            En WebStudio, nos dedicamos a transformar la presencia digital de negocios de todos los
+                            tamaños.
+                            Nuestro equipo de profesionales combina creatividad y tecnología para entregar resultados
+                            excepcionales.
+                        </p>
+                        <p class="about__text">
+                            Utilizamos las últimas tecnologías y mejores prácticas del industry para garantizar que tu
+                            proyecto
+                            no solo se vea increíble, sino que también funcione de manera óptima.
+                        </p>
+                        <div class="about__features">
+                            <div class="feature">
+                                <div class="feature__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                        <polyline points="22 4 12 14.01 9 11.01" />
+                                    </svg>
+                                </div>
+                                <div class="feature__content">
+                                    <h4>Calidad Garantizada</h4>
+                                    <p>Cada proyecto pasa por rigurosos controles de calidad</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <div class="feature__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <polyline points="12 6 12 12 16 14" />
+                                    </svg>
+                                </div>
+                                <div class="feature__content">
+                                    <h4>Soporte 24/7</h4>
+                                    <p>Estamos aquí para ayudarte cuando nos necesites</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <div class="feature__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                    </svg>
+                                </div>
+                                <div class="feature__content">
+                                    <h4>Seguridad Total</h4>
+                                    <p>Protegemos tus datos con estándares de seguridad</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__visual">
+                        <div class="about__image-wrapper">
+                            <div class="about__image" aria-hidden="true">
+                                <div class="about__code-block">
+                                    <div class="code-header">
+                                        <span class="dot red"></span>
+                                        <span class="dot yellow"></span>
+                                        <span class="dot green"></span>
+                                    </div>
+                                    <pre><code><span class="keyword">const</span> <span class="variable">solucion</span> = <span class="keyword">await</span> <span class="function">crearProyecto</span>({
+  <span class="property">diseño</span>: <span class="string">'moderno'</span>,
+  <span class="property">tecnología</span>: <span class="string">'vanguardia'</span>,
+  <span class="property">resultado</span>: <span class="string">'excepcional'</span>
+});</code></pre>
+                                </div>
+                            </div>
+                            <div class="about__experience-badge">
+                                <span class="badge-number">4+</span>
+                                <span class="badge-text">Años de Experiencia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section services" id="servicios" aria-labelledby="services-title">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Nuestros Servicios</span>
+                    <h2 class="section__title" id="services-title">¿Qué <span class="gradient-text">Ofrecemos</span>?
+                    </h2>
+                    <p class="section__description">Soluciones completas para todas tus necesidades digitales</p>
+                </div>
+
+                <div class="services__grid">
+                    <!-- Service 1 -->
+                    <article class="service-card">
+                        <div class="service-card__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                                <line x1="8" y1="21" x2="16" y2="21" />
+                                <line x1="12" y1="17" x2="12" y2="21" />
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Diseño Web Profesional</h3>
+                        <p class="service-card__description">
+                            Creamos sitios web modernos, responsivos y optimizados que capturan la atención de tus
+                            visitantes y convierten en clientes.
+                        </p>
+                        <ul class="service-card__features">
+                            <li>Diseño UI/UX profesional</li>
+                            <li>100% Responsivo</li>
+                            <li>Optimización SEO incluida</li>
+                        </ul>
+                        <a href="#contacto" class="service-card__link">
+                            Más información
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- Service 2 -->
+                    <article class="service-card">
+                        <div class="service-card__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <circle cx="9" cy="21" r="1" />
+                                <circle cx="20" cy="21" r="1" />
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Tiendas Online</h3>
+                        <p class="service-card__description">
+                            Desarrollamos tiendas eCommerce completas con pasarela de pago, gestión de inventario
+                            y panel de administración.
+                        </p>
+                        <ul class="service-card__features">
+                            <li>Pasarela de pago integrada</li>
+                            <li>Gestión de productos</li>
+                            <li>Panel de administración</li>
+                        </ul>
+                        <a href="#contacto" class="service-card__link">
+                            Más información
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- Service 3 -->
+                    <article class="service-card">
+                        <div class="service-card__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M12 19l7-7 3 3-7 7-3-3z" />
+                                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+                                <path d="M2 2l7.586 7.586" />
+                                <circle cx="11" cy="11" r="2" />
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Landing Pages</h3>
+                        <p class="service-card__description">
+                            Páginas de alto impacto diseñadas para convertir visitantes en clientes.
+                            Ideales para campañas de marketing.
+                        </p>
+                        <ul class="service-card__features">
+                            <li>Diseño enfocado en conversión</li>
+                            <li>Formularios optimizados</li>
+                            <li>A/B Testing incluido</li>
+                        </ul>
+                        <a href="#contacto" class="service-card__link">
+                            Más información
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- Service 4 -->
+                    <article class="service-card">
+                        <div class="service-card__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">SEO & Posicionamiento</h3>
+                        <p class="service-card__description">
+                            Optimizamos tu sitio web para que aparezca en los primeros resultados de Google
+                            y aumentes tu tráfico orgánico.
+                        </p>
+                        <ul class="service-card__features">
+                            <li>SEO On-Page</li>
+                            <li>SEO Técnico</li>
+                            <li>Link Building</li>
+                        </ul>
+                        <a href="#contacto" class="service-card__link">
+                            Más información
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- Service 5 -->
+                    <article class="service-card">
+                        <div class="service-card__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Mantenimiento Web</h3>
+                        <p class="service-card__description">
+                            Nos encargamos del mantenimiento técnico de tu sitio para que siempre
+                            esté actualizado, seguro y funcionando perfectamente.
+                        </p>
+                        <ul class="service-card__features">
+                            <li>Actualizaciones de seguridad</li>
+                            <li>Copias de respaldo</li>
+                            <li>Soporte técnico continuo</li>
+                        </ul>
+                        <a href="#contacto" class="service-card__link">
+                            Más información
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- Service 6 -->
+                    <article class="service-card">
+                        <div class="service-card__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                                <line x1="12" y1="22.08" x2="12" y2="12" />
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Consultoría Web</h3>
+                        <p class="service-card__description">
+                            Asesoría personalizada para definir la mejor estrategia digital
+                            y elegir las tecnologías adecuadas para tu proyecto.
+                        </p>
+                        <ul class="service-card__features">
+                            <li>Análisis de necesidades</li>
+                            <li>Recomendación tecnológica</li>
+                            <li>Planificación de proyecto</li>
+                        </ul>
+                        <a href="#contacto" class="service-card__link">
+                            Más información
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="section portfolio" id="portafolio" aria-labelledby="portfolio-title">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Lo Que Ofrecemos</span>
+                    <h2 class="section__title" id="portfolio-title">Nuestros <span class="gradient-text">Servicios</span></h2>
+                    <p class="section__description">Descubre todo lo que podemos hacer por tu negocio</p>
+                </div>
+
+                <div class="portfolio__filters">
+                    <button class="filter-btn active" data-filter="all" type="button">Todos</button>
+                    <button class="filter-btn" data-filter="web" type="button">Web</button>
+                    <button class="filter-btn" data-filter="ecommerce" type="button">E-Commerce</button>
+                </div>
+
+                <div class="portfolio__grid">
+                    <!-- Service 1 -->
+                    <article class="portfolio-card" data-category="web">
+                        <div class="portfolio-card__image">
+                            <div class="portfolio-placeholder"
+                                style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="1.5">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                                    <line x1="8" y1="21" x2="16" y2="21" />
+                                    <line x1="12" y1="17" x2="12" y2="21" />
+                                </svg>
+                            </div>
+                            <div class="portfolio-card__overlay">
+                                <h4>Sitios Web Corporativos</h4>
+                                <p>Páginas web profesionales para empresas</p>
+                                <a href="#contacto" class="btn btn--small">Solicitar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Service 2 -->
+                    <article class="portfolio-card" data-category="ecommerce">
+                        <div class="portfolio-card__image">
+                            <div class="portfolio-placeholder"
+                                style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="1.5">
+                                    <circle cx="9" cy="21" r="1" />
+                                    <circle cx="20" cy="21" r="1" />
+                                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                                </svg>
+                            </div>
+                            <div class="portfolio-card__overlay">
+                                <h4>Tiendas Online</h4>
+                                <p>E-commerce con pasarela de pago</p>
+                                <a href="#contacto" class="btn btn--small">Solicitar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Service 3 -->
+                    <article class="portfolio-card" data-category="web">
+                        <div class="portfolio-card__image">
+                            <div class="portfolio-placeholder"
+                                style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="1.5">
+                                    <path d="M12 19l7-7 3 3-7 7-3-3z" />
+                                    <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+                                    <path d="M2 2l7.586 7.586" />
+                                    <circle cx="11" cy="11" r="2" />
+                                </svg>
+                            </div>
+                            <div class="portfolio-card__overlay">
+                                <h4>Landing Pages</h4>
+                                <p>Páginas de alto impacto para conversiones</p>
+                                <a href="#contacto" class="btn btn--small">Solicitar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Service 4 -->
+                    <article class="portfolio-card" data-category="web">
+                        <div class="portfolio-card__image">
+                            <div class="portfolio-placeholder"
+                                style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="1.5">
+                                    <circle cx="11" cy="11" r="8" />
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                </svg>
+                            </div>
+                            <div class="portfolio-card__overlay">
+                                <h4>SEO & Posicionamiento</h4>
+                                <p>Aparece en los primeros de Google</p>
+                                <a href="#contacto" class="btn btn--small">Solicitar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Service 5 -->
+                    <article class="portfolio-card" data-category="web">
+                        <div class="portfolio-card__image">
+                            <div class="portfolio-placeholder"
+                                style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="1.5">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <line x1="16" y1="13" x2="8" y2="13" />
+                                    <line x1="16" y1="17" x2="8" y2="17" />
+                                </svg>
+                            </div>
+                            <div class="portfolio-card__overlay">
+                                <h4>Sistemas de Gestión</h4>
+                                <p>Plataformas web a medida</p>
+                                <a href="#contacto" class="btn btn--small">Solicitar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Service 6 -->
+                    <article class="portfolio-card" data-category="ecommerce">
+                        <div class="portfolio-card__image">
+                            <div class="portfolio-placeholder"
+                                style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);">
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="white"
+                                    stroke-width="1.5">
+                                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2" />
+                                    <line x1="1" y1="10" x2="23" y2="10" />
+                                </svg>
+                            </div>
+                            <div class="portfolio-card__overlay">
+                                <h4>Pasarelas de Pago</h4>
+                                <p>Integración con múltiples medios de pago</p>
+                                <a href="#contacto" class="btn btn--small">Solicitar</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="section testimonials" id="testimonios" aria-labelledby="testimonials-title">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Testimonios</span>
+                    <h2 class="section__title" id="testimonials-title">Lo Que Dicen <span class="gradient-text">Nuestros
+                            Clientes</span></h2>
+                    <p class="section__description">La satisfacción de nuestros clientes es nuestra mayor recompensa</p>
+                </div>
+
+                <div class="testimonials__slider">
+                    <div class="testimonials__track" id="testimonials-track">
+                        <!-- Testimonial 1 -->
+                        <article class="testimonial-card">
+                            <div class="testimonial-card__stars" aria-label="5 de 5 estrellas">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </div>
+                            <blockquote class="testimonial-card__text">
+                                "Excelente trabajo en nuestro sitio web. El equipo fue muy profesional y entregó un
+                                producto
+                                que superó nuestras expectativas. Totalmente recomendados."
+                            </blockquote>
+                            <div class="testimonial-card__author">
+                                <div class="author-avatar">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.5">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                        <circle cx="12" cy="7" r="4" />
+                                    </svg>
+                                </div>
+                                <div class="author-info">
+                                    <h4>María García</h4>
+                                    <p>CEO, TechStart</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Testimonial 2 -->
+                        <article class="testimonial-card">
+                            <div class="testimonial-card__stars" aria-label="5 de 5 estrellas">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </div>
+                            <blockquote class="testimonial-card__text">
+                                "El sitio web que crearon para nosotros es increíble. Nuestros clientes están encantados
+                                y hemos visto un aumento del 40% en nuestras ventas."
+                            </blockquote>
+                            <div class="testimonial-card__author">
+                                <div class="author-avatar">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.5">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                        <circle cx="12" cy="7" r="4" />
+                                    </svg>
+                                </div>
+                                <div class="author-info">
+                                    <h4>Carlos Rodríguez</h4>
+                                    <p>Director, InnovaSoft</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Testimonial 3 -->
+                        <article class="testimonial-card">
+                            <div class="testimonial-card__stars" aria-label="5 de 5 estrellas">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </div>
+                            <blockquote class="testimonial-card__text">
+                                "El rebranding que realizaron transformó completamente nuestra imagen. Ahora
+                                transmitimos
+                                profesionalismo y confianza. El ROI ha sido increíble."
+                            </blockquote>
+                            <div class="testimonial-card__author">
+                                <div class="author-avatar">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.5">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                        <circle cx="12" cy="7" r="4" />
+                                    </svg>
+                                </div>
+                                <div class="author-info">
+                                    <h4>Ana Martínez</h4>
+                                    <p>Fundadora, EcoVerde</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="testimonials__controls">
+                        <button class="testimonial-btn prev" id="testimonial-prev" aria-label="Testimonio anterior"
+                            type="button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M15 18l-6-6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="testimonials__dots" id="testimonials-dots" role="tablist"
+                            aria-label="Seleccionar testimonio">
+                            <button class="dot active" data-index="0" role="tab" aria-selected="true"
+                                aria-label="Testimonio 1" type="button"></button>
+                            <button class="dot" data-index="1" role="tab" aria-selected="false"
+                                aria-label="Testimonio 2" type="button"></button>
+                            <button class="dot" data-index="2" role="tab" aria-selected="false"
+                                aria-label="Testimonio 3" type="button"></button>
+                        </div>
+                        <button class="testimonial-btn next" id="testimonial-next" aria-label="Siguiente testimonio"
+                            type="button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M9 18l6-6-6-6" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section faq" id="faq" aria-labelledby="faq-title">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">FAQ</span>
+                    <h2 class="section__title" id="faq-title">Preguntas <span class="gradient-text">Frecuentes</span>
+                    </h2>
+                    <p class="section__description">Resolvemos tus dudas más comunes</p>
+                </div>
+
+                <div class="faq__grid">
+                    <div class="faq__list" role="list">
+                        <!-- FAQ Item 1 -->
+                        <div class="faq-item" role="listitem">
+                            <button class="faq-item__question" aria-expanded="false" type="button">
+                                <span>¿Cuánto tiempo toma desarrollar un proyecto?</span>
+                                <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9" />
+                                </svg>
+                            </button>
+                            <div class="faq-item__answer" role="region">
+                                <p>
+                                    El tiempo de desarrollo varía según la complejidad del proyecto. Un sitio web
+                                    corporativo
+                                    típico toma entre 2 y 4 semanas. Proyectos más complejos como aplicaciones web o
+                                    plataformas de e-commerce pueden tomar entre 6 y 12 semanas. Siempre proporcionamos
+                                    un cronograma detallado al inicio del proyecto.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 2 -->
+                        <div class="faq-item" role="listitem">
+                            <button class="faq-item__question" aria-expanded="false" type="button">
+                                <span>¿Ofrecen soporte después del lanzamiento?</span>
+                                <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9" />
+                                </svg>
+                            </button>
+                            <div class="faq-item__answer" role="region">
+                                <p>
+                                    Sí, ofrecemos soporte técnico continuo y planes de mantenimiento para asegurar que
+                                    tu sitio funcione perfectamente. Nuestros planes incluyen actualizaciones de
+                                    seguridad,
+                                    copias de respaldo, soporte técnico y优化化 de rendimiento.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 3 -->
+                        <div class="faq-item" role="listitem">
+                            <button class="faq-item__question" aria-expanded="false" type="button">
+                                <span>¿Cuáles son sus métodos de pago?</span>
+                                <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9" />
+                                </svg>
+                            </button>
+                            <div class="faq-item__answer" role="region">
+                                <p>
+                                    Aceptamos transferencia bancaria, tarjeta de crédito/débito y PayPal. Ofrecemos
+                                    planes
+                                    de financiamiento para proyectos grandes, generalmente con un 50% de anticipo y el
+                                    resto contra entrega del proyecto.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div class="faq-item" role="listitem">
+                            <button class="faq-item__question" aria-expanded="false" type="button">
+                                <span>¿Trabajan con empresas de todos los tamaños?</span>
+                                <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9" />
+                                </svg>
+                            </button>
+                            <div class="faq-item__answer" role="region">
+                                <p>
+                                    Absolutamente. Trabajamos con startups, pequeñas y medianas empresas, así como con
+                                    corporaciones grandes. Adaptamos nuestros servicios y presupuestos para satisfacer
+                                    las necesidades específicas de cada cliente.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 5 -->
+                        <div class="faq-item" role="listitem">
+                            <button class="faq-item__question" aria-expanded="false" type="button">
+                                <span>¿Qué tecnologías utilizan?</span>
+                                <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9" />
+                                </svg>
+                            </button>
+                            <div class="faq-item__answer" role="region">
+                                <p>
+                                    Utilizamos las tecnologías más modernas y confiables del mercado, incluyendo HTML5,
+                                    CSS3,
+                                    JavaScript moderno, React, y muchas más. Seleccionamos la mejor tecnología
+                                    según los requerimientos específicos de cada proyecto.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq__cta">
+                        <div class="faq-cta-card">
+                            <h3>¿No encontraste tu respuesta?</h3>
+                            <p>Nuestro equipo está listo para responder todas tus preguntas</p>
+                            <a href="#contacto" class="btn btn--primary">Contáctanos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact" id="contacto" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Contacto</span>
+                    <h2 class="section__title" id="contact-title">Hablemos de <span class="gradient-text">Tu
+                            Proyecto</span></h2>
+                    <p class="section__description">Estamos aquí para ayudarte a hacer realidad tu visión</p>
+                </div>
+
+                <div class="contact__grid">
+                    <div class="contact__info">
+                        <div class="contact-info-card">
+                            <div class="contact-info-card__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div class="contact-info-card__content">
+                                <h4>Ubicación</h4>
+                                <p>900 Av. Manuel Villarán<br>Lima, Perú</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="contact-info-card__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                            </div>
+                            <div class="contact-info-card__content">
+                                <h4>WhatsApp</h4>
+                                <p><a href="https://wa.me/51980431576" target="_blank"
+                                        rel="noopener noreferrer">+51 980 431 576</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="contact-info-card__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </div>
+                            <div class="contact-info-card__content">
+                                <h4>Email</h4>
+                                <p><a href="mailto:webstudiosolution99@gmail.com"
+                                        id="company-email">webstudiosolution99@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="contact-info-card__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                            </div>
+                            <div class="contact-info-card__content">
+                                <h4>Horario</h4>
+                                <p>Lunes - Viernes: 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+
+                        <!-- Google Maps -->
+                        <div class="contact__map" id="map">
+                            <iframe id="company-map" title="Mapa de ubicación de WebStudio"
+                                src="https://www.google.com/maps/embed?pb=!4v1783119767158!6m8!1m7!1sGPwowy7PB2VbgnIs6QOJVA!2m2!1d-12.12067787303898!2d-77.0028401683174!3f188.40521776939786!4f8.752663170698568!5f0.7820865974627469"
+                                allowfullscreen loading="lazy"
+                                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                            <a href="https://maps.app.goo.gl/pxaP98akrv7DDAe88" id="company-map-link" class="map-link" target="_blank"
+                                rel="noopener noreferrer">Abrir en Google Maps</a>
+                        </div>
+                    </div>
+
+                    <div class="contact__form-wrapper">
+                        <form class="contact-form" id="contact-form" action="#" method="POST">
+
+                            <!-- Web3Forms: coloca tu Access Key ofuscada en js/main.js, constante WEB3FORMS_KEY_PAYLOAD. -->
+                            <input type="hidden" name="access_key" id="web3forms-access-key" value="">
+                            <input type="hidden" name="subject" value="Nuevo mensaje desde WebStudio">
+                            <input type="hidden" name="from_name" value="WebStudio">
+                            <div class="form-honeypot" aria-hidden="true">
+                                <label for="botcheck">No completar este campo</label>
+                                <input type="checkbox" id="botcheck" name="botcheck" tabindex="-1" autocomplete="off">
+                            </div>
+
+<div class="form-group">
+                                <label for="name" class="form-label">Nombre completo <span
+                                        aria-hidden="true">*</span></label>
+                                <input type="text" id="name" name="name" class="form-input" required minlength="2"
+                                    maxlength="100" autocomplete="name" placeholder="Tu nombre">
+                                <span class="form-error" id="name-error" role="alert"></span>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email <span
+                                            aria-hidden="true">*</span></label>
+                                    <input type="email" id="email" name="email" class="form-input" required
+                                        autocomplete="email" placeholder="tu@email.com">
+                                    <span class="form-error" id="email-error" role="alert"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Teléfono</label>
+                                    <input type="tel" id="phone" name="phone" class="form-input" autocomplete="tel"
+                                        placeholder="Tu teléfono">
+                                    <span class="form-error" id="phone-error" role="alert"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="service" class="form-label">Servicio de interés</label>
+                                <select id="service" name="service" class="form-input form-select">
+                                    <option value="">Selecciona un servicio</option>
+                                    <option value="web-design">Diseño Web</option>
+                                    <option value="ecommerce">Tienda Online</option>
+                                    <option value="landing">Landing Page</option>
+                                    <option value="seo">SEO & Posicionamiento</option>
+                                    <option value="management">Sistema de Gestión</option>
+                                    <option value="payment">Pasarela de Pago</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget" class="form-label">Presupuesto estimado</label>
+                                <select id="budget" name="budget" class="form-input form-select">
+                                    <option value="">Selecciona un rango</option>
+                                    <option value="500-1000">$500 - $1,000 USD</option>
+                                    <option value="1000-3000">$1,000 - $3,000 USD</option>
+                                    <option value="3000-5000">$3,000 - $5,000 USD</option>
+                                    <option value="5000-10000">$5,000 - $10,000 USD</option>
+                                    <option value="10000+">Más de $10,000 USD</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Mensaje <span
+                                        aria-hidden="true">*</span></label>
+                                <textarea id="message" name="message" class="form-input form-textarea" required
+                                    minlength="10" maxlength="2000" rows="5"
+                                    placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+                                <span class="form-error" id="message-error" role="alert"></span>
+                                <span class="form-char-count"><span id="char-count">0</span>/2000</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-checkbox">
+                                    <input type="checkbox" id="privacy" name="privacy" required>
+                                    <span class="checkmark"></span>
+                                    <span>Acepto la <a href="politica-privacidad.html" target="_blank">Política de
+                                            Privacidad</a> y los <a href="terminos-condiciones.html" target="_blank">Términos y
+                                            Condiciones</a> <span aria-hidden="true">*</span></span>
+                                </label>
+                                <span class="form-error" id="privacy-error" role="alert"></span>
+                            </div>
+
+                            <div class="form-message" id="form-message" role="alert" aria-live="polite"></div>
+
+                            <button type="submit" class="btn btn--primary btn--full" id="submit-btn">
+                                <span class="btn-text">Enviar Mensaje</span>
+                                <span class="btn-loading" aria-hidden="true">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="12" r="10" stroke-dasharray="30 60" stroke-dashoffset="0">
+                                            <animateTransform attributeName="transform" type="rotate" from="0 12 12"
+                                                to="360 12 12" dur="1s" repeatCount="indefinite" />
+                                        </circle>
+                                    </svg>
+                                </span>
+                            </button>
+                        </form>
+
+                        <div class="form-success" id="form-success" role="alert" aria-live="polite">
+                            <div class="success-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <polyline points="22 4 12 14.01 9 11.01" />
+                                </svg>
+                            </div>
+                            <h3>¡Mensaje Enviado!</h3>
+                            <p>Gracias por contactarnos. Te responderemos en un plazo de 24 horas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="#inicio" class="footer__logo">
+                        <span class="logo-text">WebStudio</span>
+                    </a>
+                    <p class="footer__description">
+                        Soluciones de desarrollo web profesional para impulsar tu negocio.
+                        Diseño moderno, rápido y optimizado.
+                    </p>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Enlaces Rápidos</h4>
+                    <ul class="footer__list">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#portafolio">Portafolio</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Servicios</h4>
+                    <ul class="footer__list">
+                        <li><a href="#servicios">Diseño Web</a></li>
+                        <li><a href="#servicios">Tiendas Online</a></li>
+                        <li><a href="#servicios">Landing Pages</a></li>
+                        <li><a href="#servicios">SEO & Posicionamiento</a></li>
+                        <li><a href="#servicios">Sistemas de Gestión</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Legal</h4>
+                    <ul class="footer__list">
+                        <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
+                        <li><a href="politica-privacidad.html">Política de Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; <span id="current-year"></span> WebStudio. Todos los derechos reservados.</p>
+                <p>Hecho con ❤️ para todo el Mundo</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Volver arriba" type="button">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </button>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/51980431576" class="whatsapp-btn" aria-label="Escríbenos por WhatsApp" target="_blank"
+        rel="noopener noreferrer">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+        <span class="whatsapp-text">Escríbenos por WhatsApp</span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>

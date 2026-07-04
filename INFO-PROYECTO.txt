@@ -1,0 +1,48 @@
+========================================
+WEBSTUDIO - Información del Proyecto
+========================================
+
+DATOS DEL NEGOCIO:
+------------------
+- Nombre: WebStudio
+- Servicios: Desarrollo web profesional
+- WhatsApp: botón protegido generado con JavaScript
+- Contacto: formulario Web3Forms
+- Experiencia: 2 años
+- Ubicación: Lima, Perú
+
+SERVICIOS OFRECIDOS:
+--------------------
+1. Diseño Web Profesional
+2. Tiendas Online (E-Commerce)
+3. Landing Pages
+4. SEO & Posicionamiento
+5. Mantenimiento Web
+6. Consultoría Web
+
+ARCHIVOS DEL PROYECTO:
+----------------------
+- index.html (página principal)
+- css/styles.css (estilos)
+- js/main.js (JavaScript)
+- politica-privacidad.html
+- terminos-condiciones.html
+- sitemap.xml
+- robots.txt
+
+CONFIGURACIÓN DEL FORMULARIO:
+-----------------------------
+- El formulario se envía mediante Web3Forms
+- Funciona como sitio estático en GitHub Pages y Cloudflare Pages
+- Access Key: configurar WEB3FORMS_KEY_PAYLOAD en js/main.js
+
+NOTAS:
+------
+- Sin redes sociales (el negocio solo hace desarrollo web)
+- Sin marketing digital
+- Solo servicios web
+- Política de privacidad y términos incluidos
+- Formato legal para negocio de desarrollo web
+
+FECHA DE ÚLTIMA ACTUALIZACIÓN: 30 de junio de 2026
+========================================
