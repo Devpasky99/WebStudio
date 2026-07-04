@@ -1876,6 +1876,10 @@ input, textarea, select {
     .hero__buttons {
         flex-direction: column;
     }
+
+    .hero__buttons .btn {
+        width: 100%;
+    }
     
     .hero__stats {
         flex-direction: column;
@@ -1895,9 +1899,53 @@ input, textarea, select {
     .portfolio__grid {
         grid-template-columns: 1fr;
     }
+
+    .contact__grid,
+    .contact__info,
+    .contact__form-wrapper,
+    .contact-form {
+        min-width: 0;
+    }
+
+    .contact-info-card {
+        align-items: flex-start;
+    }
+
+    .contact-info-card__content {
+        min-width: 0;
+    }
+
+    .contact-info-card__content p,
+    .contact-info-card__content a {
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    .contact__map {
+        height: 260px;
+    }
+
+    .map-link {
+        max-width: calc(100% - 2rem);
+        text-align: center;
+    }
     
     .form-row {
         grid-template-columns: 1fr;
+    }
+
+    .form-input,
+    .form-textarea,
+    .form-select {
+        max-width: 100%;
+    }
+
+    .form-checkbox {
+        gap: var(--spacing-sm);
+    }
+
+    .form-checkbox span:last-child {
+        min-width: 0;
     }
     
     .footer__grid {
@@ -1916,8 +1964,10 @@ input, textarea, select {
         padding: 0 var(--spacing-md);
         bottom: var(--spacing-lg);
         left: var(--spacing-lg);
+        max-width: calc(100vw - 2rem);
     }
-.back-to-top {
+
+    .back-to-top {
         width: 40px;
         height: 40px;
         bottom: var(--spacing-lg);
@@ -1938,9 +1988,18 @@ input, textarea, select {
     .hero__title {
         font-size: var(--font-size-2xl);
     }
+
+    .hero__description,
+    .section__description {
+        font-size: var(--font-size-base);
+    }
     
     .section__title {
         font-size: var(--font-size-2xl);
+    }
+
+    .section {
+        padding: var(--spacing-3xl) 0;
     }
     
     .about__experience-badge {
@@ -1959,7 +2018,51 @@ input, textarea, select {
     }
     
     .contact__form-wrapper {
-        padding: var(--spacing-xl);
+        padding: var(--spacing-lg);
+        border-radius: var(--radius-lg);
+    }
+
+    .contact-info-card {
+        padding: var(--spacing-lg);
+    }
+
+    .contact__map {
+        height: 220px;
+    }
+
+    .btn {
+        width: 100%;
+        min-height: 48px;
+        padding-left: var(--spacing-md);
+        padding-right: var(--spacing-md);
+    }
+
+    .whatsapp-btn {
+        width: auto;
+        max-width: calc(100vw - 2rem);
+    }
+}
+
+@media (max-width: 360px) {
+    :root {
+        --container-padding: 0.875rem;
+    }
+
+    .contact__form-wrapper,
+    .service-card,
+    .contact-info-card {
+        padding: var(--spacing-md);
+    }
+
+    .whatsapp-text {
+        display: none;
+    }
+
+    .whatsapp-btn {
+        width: 52px;
+        height: 52px;
+        padding: 0;
+        justify-content: center;
     }
 }
 

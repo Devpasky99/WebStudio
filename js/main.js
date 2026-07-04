@@ -542,20 +542,10 @@ function initFAQ() {
 
 const WEB3FORMS_ENDPOINT = 'https://api.web3forms.com/submit';
 
-// WEB3FORMS ACCESS KEY:
-// 1. Ejecuta en la consola del navegador: btoa('TU_ACCESS_KEY').split('').reverse().join('')
-// 2. Pega el resultado entre las comillas de WEB3FORMS_KEY_PAYLOAD.
-// 3. No coloques tu correo electrónico en este proyecto.
-const WEB3FORMS_KEY_PAYLOAD = '';
+const WEB3FORMS_ACCESS_KEY = '88f5cfd6-6688-4d8c-bc8f-4b9319b13ce2';
 
 function getWeb3FormsAccessKey() {
-    if (!WEB3FORMS_KEY_PAYLOAD) return '';
-
-    try {
-        return atob(WEB3FORMS_KEY_PAYLOAD.split('').reverse().join('')).trim();
-    } catch (error) {
-        return '';
-    }
+    return WEB3FORMS_ACCESS_KEY.trim();
 }
 
 function initProtectedWhatsApp() {
