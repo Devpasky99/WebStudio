@@ -750,6 +750,8 @@ input, textarea, select {
 
 .about__image-wrapper {
     position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-2xl);
 }
 
 .about__image {
@@ -1817,8 +1819,12 @@ input, textarea, select {
 /* Mobile (max-width: 768px) */
 @media (max-width: 768px) {
     :root {
-        --header-height: 70px;
+        --header-height: 60px;
         --container-padding: 1rem;
+    }
+    
+    html {
+        -webkit-text-size-adjust: 100%;
     }
     
     .nav__menu {
@@ -1828,6 +1834,7 @@ input, textarea, select {
         width: 80%;
         max-width: 320px;
         height: 100vh;
+        height: 100dvh;
         background: var(--color-white);
         flex-direction: column;
         align-items: flex-start;
@@ -1835,6 +1842,7 @@ input, textarea, select {
         box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
         transition: right var(--transition-base);
         z-index: var(--z-modal);
+        overflow-y: auto;
     }
     
     .nav__menu.active {
@@ -1866,38 +1874,83 @@ input, textarea, select {
     
     .hero {
         min-height: auto;
-        padding: calc(var(--header-height) + var(--spacing-2xl)) 0 var(--spacing-3xl);
+        padding: calc(var(--header-height) + var(--spacing-xl)) 0 var(--spacing-2xl);
+    }
+    
+    .hero__container {
+        gap: var(--spacing-2xl);
     }
     
     .hero__title {
-        font-size: var(--font-size-3xl);
+        font-size: clamp(1.625rem, 6vw, 2.25rem);
+        line-height: 1.2;
+    }
+    
+    .hero__badge {
+        font-size: var(--font-size-xs);
+        padding: var(--spacing-xs) var(--spacing-md);
+    }
+    
+    .hero__description {
+        font-size: var(--font-size-base);
+        line-height: 1.7;
+        margin-bottom: var(--spacing-xl);
     }
     
     .hero__buttons {
         flex-direction: column;
+        gap: var(--spacing-sm);
     }
 
     .hero__buttons .btn {
         width: 100%;
+        padding: 0.75rem 1.5rem;
     }
     
     .hero__stats {
-        flex-direction: column;
+        flex-direction: row;
         gap: var(--spacing-xl);
-        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     
     .stat {
         text-align: center;
     }
     
+    .stat__number {
+        font-size: var(--font-size-2xl);
+    }
+    
     .hero__scroll {
         display: none;
+    }
+    
+    .section {
+        padding: var(--spacing-2xl) 0;
+    }
+    
+    .section__header {
+        margin-bottom: var(--spacing-2xl);
+    }
+    
+    .section__title {
+        font-size: clamp(1.5rem, 5vw, 2rem);
     }
     
     .services__grid,
     .portfolio__grid {
         grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .service-card,
+    .portfolio-card {
+        border-radius: var(--radius-lg);
+    }
+
+    .contact__grid {
+        gap: var(--spacing-xl);
     }
 
     .contact__grid,
@@ -1909,6 +1962,7 @@ input, textarea, select {
 
     .contact-info-card {
         align-items: flex-start;
+        padding: var(--spacing-md);
     }
 
     .contact-info-card__content {
@@ -1922,22 +1976,26 @@ input, textarea, select {
     }
 
     .contact__map {
-        height: 260px;
+        height: 220px;
+        margin-top: var(--spacing-md);
     }
 
     .map-link {
         max-width: calc(100% - 2rem);
         text-align: center;
+        font-size: var(--font-size-xs);
     }
     
     .form-row {
         grid-template-columns: 1fr;
+        gap: var(--spacing-md);
     }
 
     .form-input,
     .form-textarea,
     .form-select {
         max-width: 100%;
+        font-size: 16px;
     }
 
     .form-checkbox {
@@ -1946,11 +2004,12 @@ input, textarea, select {
 
     .form-checkbox span:last-child {
         min-width: 0;
+        font-size: var(--font-size-xs);
     }
     
     .footer__grid {
         grid-template-columns: 1fr;
-        gap: var(--spacing-2xl);
+        gap: var(--spacing-xl);
     }
     
     .footer__bottom {
@@ -1960,18 +2019,22 @@ input, textarea, select {
     }
     
     .whatsapp-btn {
-        min-height: 50px;
+        min-height: 48px;
         padding: 0 var(--spacing-md);
-        bottom: var(--spacing-lg);
-        left: var(--spacing-lg);
+        bottom: var(--spacing-md);
+        left: var(--spacing-md);
         max-width: calc(100vw - 2rem);
+    }
+
+    .whatsapp-text {
+        font-size: var(--font-size-xs);
     }
 
     .back-to-top {
         width: 40px;
         height: 40px;
-        bottom: var(--spacing-lg);
-        right: var(--spacing-lg);
+        bottom: var(--spacing-md);
+        right: var(--spacing-md);
     }
     
     .testimonial-card {
@@ -1979,79 +2042,133 @@ input, textarea, select {
     }
     
     .testimonial-card__text {
-        font-size: var(--font-size-lg);
+        font-size: var(--font-size-base);
+        line-height: 1.7;
+    }
+    
+    .testimonial-card__author {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .testimonials__controls {
+        margin-top: var(--spacing-xl);
+    }
+    
+    .about__grid {
+        gap: var(--spacing-2xl);
+    }
+    
+    .about__code-block pre {
+        padding: var(--spacing-md);
+    }
+    
+    .about__code-block code {
+        font-size: var(--font-size-xs);
     }
 }
 
 /* Small Mobile (max-width: 480px) */
 @media (max-width: 480px) {
+    :root {
+        --container-padding: 0.875rem;
+    }
+
+    .hero {
+        padding: calc(var(--header-height) + var(--spacing-lg)) 0 var(--spacing-xl);
+    }
+
     .hero__title {
-        font-size: var(--font-size-2xl);
+        font-size: 1.5rem;
     }
 
     .hero__description,
     .section__description {
-        font-size: var(--font-size-base);
+        font-size: var(--font-size-sm);
     }
     
     .section__title {
-        font-size: var(--font-size-2xl);
+        font-size: 1.375rem;
     }
-
+    
     .section {
-        padding: var(--spacing-3xl) 0;
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .hero__stats {
+        gap: var(--spacing-md);
+    }
+    
+    .stat__number {
+        font-size: 1.25rem;
+    }
+    
+    .stat__label {
+        font-size: var(--font-size-xs);
     }
     
     .about__experience-badge {
-        width: 100px;
-        height: 100px;
-        bottom: -20px;
-        right: -10px;
+        width: 90px;
+        height: 90px;
+        bottom: -15px;
+        right: -5px;
     }
     
     .badge-number {
-        font-size: var(--font-size-2xl);
+        font-size: 1.25rem;
+    }
+    
+    .badge-text {
+        font-size: 0.625rem;
     }
     
     .service-card {
-        padding: var(--spacing-xl);
+        padding: var(--spacing-lg);
     }
     
     .contact__form-wrapper {
-        padding: var(--spacing-lg);
+        padding: var(--spacing-md);
         border-radius: var(--radius-lg);
     }
 
     .contact-info-card {
-        padding: var(--spacing-lg);
+        padding: var(--spacing-md);
     }
 
     .contact__map {
-        height: 220px;
+        height: 200px;
     }
 
     .btn {
-        width: 100%;
-        min-height: 48px;
-        padding-left: var(--spacing-md);
-        padding-right: var(--spacing-md);
+        min-height: 44px;
+        padding: 0.625rem 1.25rem;
     }
 
     .whatsapp-btn {
         width: auto;
         max-width: calc(100vw - 2rem);
     }
+
+    .faq-item__question {
+        padding: var(--spacing-md);
+        font-size: var(--font-size-sm);
+    }
+    
+    .faq-item__answer p {
+        padding: 0 var(--spacing-md) var(--spacing-md);
+        font-size: var(--font-size-sm);
+    }
 }
 
 @media (max-width: 360px) {
     :root {
-        --container-padding: 0.875rem;
+        --container-padding: 0.75rem;
     }
 
     .contact__form-wrapper,
     .service-card,
     .contact-info-card {
-        padding: var(--spacing-md);
+        padding: var(--spacing-sm);
     }
 
     .whatsapp-text {
@@ -2059,10 +2176,14 @@ input, textarea, select {
     }
 
     .whatsapp-btn {
-        width: 52px;
-        height: 52px;
+        width: 48px;
+        height: 48px;
         padding: 0;
         justify-content: center;
+    }
+    
+    .hero__title {
+        font-size: 1.375rem;
     }
 }
 

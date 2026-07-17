@@ -119,9 +119,10 @@ function throttle(func, limit = 100) {
  * @returns {string} Sanitized string
  */
 function sanitizeInput(input) {
+    if (typeof input !== 'string') return '';
     const div = document.createElement('div');
-    div.textContent = input;
-    return div.innerHTML;
+    div.appendChild(document.createTextNode(input));
+    return div.textContent;
 }
 
 /**
@@ -271,7 +272,7 @@ function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
+            if (!targetId || targetId === '#' || !/^#[a-zA-Z][\w-]*$/.test(targetId)) return;
             
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
@@ -592,8 +593,9 @@ async function initCompanyInfo() {
         const { email, mapsUrl, mapsEmbedUrl } = result.data || {};
 
         if (DOM.companyEmail && email) {
-            DOM.companyEmail.textContent = email;
-            DOM.companyEmail.href = `mailto:${email}`;
+            const safeEmail = email.replace(/[^a-zA-Z0-9@._-]/g, '');
+            DOM.companyEmail.textContent = safeEmail;
+            DOM.companyEmail.href = `mailto:${safeEmail}`;
         }
 
         if (DOM.companyMap && mapsEmbedUrl) {
@@ -788,6 +790,7 @@ async function submitContactForm(formData) {
     }
 
     formData.set('access_key', accessKey);
+    formData.set('timestamp', Date.now().toString());
 
     const response = await fetch(WEB3FORMS_ENDPOINT, {
         method: 'POST',

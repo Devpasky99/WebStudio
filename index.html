@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://www.google.com https://maps.google.com; connect-src 'self' https://api.web3forms.com">
 
     <!-- SEO Meta Tags -->
     <title>WebStudio | Desarrollo Web Profesional</title>
@@ -189,7 +190,7 @@
             <div class="hero__particles" id="particles" aria-hidden="true"></div>
             <div class="container hero__container">
                 <div class="hero__content">
-                    <span class="hero__badge animate-fade-in">✨ Desarrollo Web Profesional</span>
+                    <span class="hero__badge animate-fade-in">Desarrollo Web Profesional</span>
                     <h1 class="hero__title animate-fade-in" id="hero-title">
                         Transformamos Ideas en
                         <span class="gradient-text">Experiencias Digitales</span>
@@ -216,7 +217,7 @@
                             <span class="stat__label">Proyectos Completados</span>
                         </div>
                         <div class="stat">
-                            <span class="stat__number" data-count="99">0</span>
+                            <span class="stat__number" data-count="100">0</span>
                             <span class="stat__label">% Clientes Satisfechos</span>
                         </div>
                         <div class="stat">
@@ -229,15 +230,32 @@
                     <div class="hero__image-wrapper">
                         <div class="hero__shape" aria-hidden="true"></div>
                         <div class="hero__floating-card card-1" aria-hidden="true">
-                            <span class="card-icon">💻</span>
+                            <span class="card-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                                    </svg>
+                                </span>
                             <span class="card-text">Diseño Web</span>
                         </div>
                         <div class="hero__floating-card card-2" aria-hidden="true">
-                            <span class="card-icon">🛒</span>
+                            <span class="card-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="9" cy="21" r="1"></circle>
+                                        <circle cx="20" cy="21" r="1"></circle>
+                                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                                    </svg>
+                                </span>
                             <span class="card-text"> Tiendas Online</span>
                         </div>
                         <div class="hero__floating-card card-3" aria-hidden="true">
-                            <span class="card-icon">🔍</span>
+                            <span class="card-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                </span>
                             <span class="card-text">SEO & Posicionamiento</span>
                         </div>
                     </div>
@@ -1034,7 +1052,7 @@
                         <!-- Google Maps -->
                         <div class="contact__map" id="map">
                             <iframe id="company-map" title="Mapa de ubicación de WebStudio"
-                                src="https://www.google.com/maps/embed?pb=!4v1783119767158!6m8!1m7!1sGPwowy7PB2VbgnIs6QOJVA!2m2!1d-12.12067787303898!2d-77.0028401683174!3f188.40521776939786!4f8.752663170698568!5f0.7820865974627469"
+                                src="https://maps.google.com/maps?q=-12.12067787303898,-77.0028401683174&t=&z=17&ie=UTF8&iwloc=&output=embed"
                                 allowfullscreen loading="lazy"
                                 referrerpolicy="strict-origin-when-cross-origin"></iframe>
                             <a href="https://maps.app.goo.gl/pxaP98akrv7DDAe88" id="company-map-link" class="map-link"
@@ -1207,7 +1225,7 @@
 
             <div class="footer__bottom">
                 <p>&copy; <span id="current-year"></span> WebStudio. Todos los derechos reservados.</p>
-                <p>Hecho con ❤️ para todo el Mundo</p>
+                <p>Hecho con dedicacion para todo el Mundo</p>
             </div>
         </div>
     </footer>

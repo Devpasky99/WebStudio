@@ -1,0 +1,14 @@
+{
+  "name": "webstudio-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sitio web WebStudio con backend seguro para contacto.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
